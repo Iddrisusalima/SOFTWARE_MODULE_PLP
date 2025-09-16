@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bringing Web Pages to Life with CSS & JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <h1 class="main-title">🎨✨ Bringing Web Pages to Life</h1>
+        <p class="subtitle">CSS3 Animations + JavaScript Functions = Magic!</p>
+        <div class="animated-line"></div>
+    </header>
+
+    <main class="container">
+        
+        <!-- =====  CSS3 TRANSITIONS AND ANIMATIONS ===== -->
+        <section class="section" id="part1">
+            <h2 class="section-title">🎨✨  CSS3 Transitions and Animations</h2>
+            <p class="section-description">Pure CSS animations that respond to user interaction and time-based triggers</p>
+            
+            <div class="demo-grid">
+                
+                <!-- Button Hover Effects Demo -->
+                <div class="demo-card">
+                    <h3>Button Hover Effects</h3>
+                    <div class="button-showcase">
+                        <button class="btn btn-hover-slide">Slide Effect</button>
+                        <button class="btn btn-hover-bounce">Bounce Effect</button>
+                        <button class="btn btn-hover-rotate">Rotate Effect</button>
+                        <button class="btn btn-hover-pulse">Pulse Effect</button>
+                    </div>
+                </div>
+
+                <!-- Smooth Transitions Demo -->
+                <div class="demo-card">
+                    <h3>Smooth Transitions</h3>
+                    <div class="transition-showcase">
+                        <div class="fade-box">Hover to Fade</div>
+                        <div class="slide-box">Slide Transform</div>
+                        <div class="scale-box">Scale & Color</div>
+                    </div>
+                </div>
+
+                <!-- Keyframe Animations Demo -->
+                <div class="demo-card">
+                    <h3>Keyframe Animations</h3>
+                    <div class="animation-showcase">
+                        <div class="floating-circle"></div>
+                        <div class="spinning-square"></div>
+                        <div class="pulsing-heart">❤️</div>
+                        <div class="bouncing-ball"></div>
+                    </div>
+                </div>
+
+                <!-- Continuous Animations -->
+                <div class="demo-card">
+                    <h3>Continuous Loading Animation</h3>
+                    <div class="loader-container">
+                        <div class="loader-dots">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- =====  JAVASCRIPT FUNCTIONS ===== -->
+        <section class="section" id="part2">
+            <h2 class="section-title">📚✨  JavaScript Functions - Scope, Parameters & Return Values</h2>
+            <p class="section-description">Custom functions demonstrating parameters, return values, and scope awareness</p>
+            
+            <div class="demo-grid">
+                
+                <!-- Function Parameters Demo -->
+                <div class="demo-card">
+                    <h3>Functions with Parameters</h3>
+                    <div class="function-demo">
+                        <input type="number" id="num1" placeholder="First Number" value="5">
+                        <input type="number" id="num2" placeholder="Second Number" value="3">
+                        <button class="btn" onclick="demonstrateCalculations()">Calculate All</button>
+                        <div id="calculation-results" class="results"></div>
+                    </div>
+                </div>
+
+                <!-- Return Values Demo -->
+                <div class="demo-card">
+                    <h3>Functions Returning Values</h3>
+                    <div class="function-demo">
+                        <input type="text" id="user-text" placeholder="Enter some text..." value="Hello World">
+                        <button class="btn" onclick="demonstrateTextFunctions()">Process Text</button>
+                        <div id="text-results" class="results"></div>
+                    </div>
+                </div>
+
+                <!-- Scope Demonstration -->
+                <div class="demo-card">
+                    <h3>Variable Scope Demo</h3>
+                    <div class="function-demo">
+                        <button class="btn" onclick="demonstrateScope()">Show Scope Example</button>
+                        <div id="scope-results" class="results"></div>
+                    </div>
+                </div>
+
+                <!-- Reusable Function Demo -->
+                <div class="demo-card">
+                    <h3>Reusable Color Generator</h3>
+                    <div class="function-demo">
+                        <button class="btn" onclick="generateRandomColors()">Generate Colors</button>
+                        <div id="color-palette" class="color-palette"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==== COMBINING CSS ANIMATIONS WITH JAVASCRIPT ===== -->
+        <section class="section" id="part3">
+            <h2 class="section-title">🎨🎬  Combining CSS Animations with JavaScript</h2>
+            <p class="section-description">JavaScript-triggered CSS animations for dynamic interactive experiences</p>
+            
+            <div class="demo-grid">
+                
+                <!-- Animated Box Controller -->
+                <div class="demo-card">
+                    <h3>Animated Box Controller</h3>
+                    <div class="animation-controller">
+                        <div id="animated-box" class="animated-box">Click buttons to animate me!</div>
+                        <div class="control-buttons">
+                            <button class="btn" onclick="triggerAnimation('bounce')">Bounce</button>
+                            <button class="btn" onclick="triggerAnimation('shake')">Shake</button>
+                            <button class="btn" onclick="triggerAnimation('flip')">Flip</button>
+                            <button class="btn" onclick="triggerAnimation('glow')">Glow</button>
+                            <button class="btn" onclick="resetAnimations()">Reset</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Flip Animation -->
+                <div class="demo-card">
+                    <h3>Interactive Card Flip</h3>
+                    <div class="card-container">
+                        <div id="flip-card" class="flip-card" onclick="flipCard()">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <h4>🎴 Front Side</h4>
+                                    <p>Click to flip!</p>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h4>✨ Back Side</h4>
+                                    <p>Click again to flip back!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dynamic Modal with Animations -->
+                <div class="demo-card">
+                    <h3>Animated Modal System</h3>
+                    <div class="modal-demo">
+                        <button class="btn" onclick="showModal('slideIn')">Slide In Modal</button>
+                        <button class="btn" onclick="showModal('fadeIn')">Fade In Modal</button>
+                        <button class="btn" onclick="showModal('zoomIn')">Zoom In Modal</button>
+                    </div>
+                </div>
+
+                <!-- Interactive Loading Animation -->
+                <div class="demo-card">
+                    <h3>Controllable Loading Animation</h3>
+                    <div class="loading-demo">
+                        <div id="loading-container" class="loading-container">
+                            <div id="loading-spinner" class="loading-spinner"></div>
+                            <div id="loading-text" class="loading-text">Ready to load...</div>
+                        </div>
+                        <div class="loading-controls">
+                            <button class="btn" onclick="startLoading()">Start Loading</button>
+                            <button class="btn" onclick="stopLoading()">Stop Loading</button>
+                            <button class="btn" onclick="simulateComplete()">Simulate Complete</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Particle Animation System -->
+                <div class="demo-card">
+                    <h3>Particle Animation Trigger</h3>
+                    <div class="particle-demo">
+                        <div id="particle-container" class="particle-container">
+                            <p>Click anywhere in this area to create particles!</p>
+                        </div>
+                        <div class="particle-controls">
+                            <button class="btn" onclick="createParticleBurst(300, 200)">Center Burst</button>
+                            <button class="btn" onclick="clearParticles()">Clear All</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <!-- Animated Modal for Part 3 -->
+    <div id="animated-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">Animated Modal</h3>
+                <button class="close-btn" onclick="hideModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p id="modal-text">This modal demonstrates different CSS animation entrance effects triggered by JavaScript!</p>
+                <div class="modal-demo-content">
+                    <div class="animated-element">✨</div>
+                    <p>The animation type is controlled by JavaScript functions that add specific CSS classes.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" onclick="hideModal()">Close Modal</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
